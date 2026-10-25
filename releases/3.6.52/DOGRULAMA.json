@@ -1,0 +1,782 @@
+{
+  "version": "3.6.52",
+  "environment": "isolated local QA; no production changes",
+  "total_passed": 181,
+  "suites": {
+    "update-results.json": {
+      "passed": 45,
+      "checks": [
+        {
+          "name": "original updater rejects tampered payload",
+          "passed": true
+        },
+        {
+          "name": "original 3.6.51 updater installs signed 3.6.52",
+          "passed": true
+        },
+        {
+          "name": "maintenance removed",
+          "passed": true
+        },
+        {
+          "name": "56 migrations applied",
+          "passed": true
+        },
+        {
+          "name": "update preserves contacts",
+          "passed": true
+        },
+        {
+          "name": "update preserves plans",
+          "passed": true
+        },
+        {
+          "name": "update preserves subscriptions",
+          "passed": true
+        },
+        {
+          "name": "company and credit balance preserved",
+          "passed": true
+        },
+        {
+          "name": "new queue table created",
+          "passed": true
+        },
+        {
+          "name": "preserved setting automatic_email3650",
+          "passed": true
+        },
+        {
+          "name": "preserved setting bank_iban",
+          "passed": true
+        },
+        {
+          "name": "preserved setting bank_name",
+          "passed": true
+        },
+        {
+          "name": "preserved setting bank_recipient",
+          "passed": true
+        },
+        {
+          "name": "preserved setting brand",
+          "passed": true
+        },
+        {
+          "name": "preserved setting commerce_config",
+          "passed": true
+        },
+        {
+          "name": "preserved setting commerce_faq",
+          "passed": true
+        },
+        {
+          "name": "preserved setting delivery_smtp_from",
+          "passed": true
+        },
+        {
+          "name": "preserved setting delivery_smtp_host",
+          "passed": true
+        },
+        {
+          "name": "preserved setting delivery_smtp_mode",
+          "passed": true
+        },
+        {
+          "name": "preserved setting delivery_smtp_password",
+          "passed": true
+        },
+        {
+          "name": "preserved setting delivery_smtp_port",
+          "passed": true
+        },
+        {
+          "name": "preserved setting delivery_smtp_user",
+          "passed": true
+        },
+        {
+          "name": "preserved setting legal_publish_lock",
+          "passed": true
+        },
+        {
+          "name": "preserved setting marketing_video_url",
+          "passed": true
+        },
+        {
+          "name": "preserved setting mobile3644_config",
+          "passed": true
+        },
+        {
+          "name": "preserved setting plan_features_3616",
+          "passed": true
+        },
+        {
+          "name": "preserved setting public_app_url",
+          "passed": true
+        },
+        {
+          "name": "preserved setting public_metrics_enabled",
+          "passed": true
+        },
+        {
+          "name": "preserved setting public_site_url",
+          "passed": true
+        },
+        {
+          "name": "preserved setting referral_enabled",
+          "passed": true
+        },
+        {
+          "name": "preserved setting referral_reward_days",
+          "passed": true
+        },
+        {
+          "name": "preserved setting registration_email_verify3643",
+          "passed": true
+        },
+        {
+          "name": "preserved setting registration_open",
+          "passed": true
+        },
+        {
+          "name": "preserved setting retention3649_stable_cron",
+          "passed": true
+        },
+        {
+          "name": "preserved setting support_email",
+          "passed": true
+        },
+        {
+          "name": "preserved setting support_phone",
+          "passed": true
+        },
+        {
+          "name": "preserved setting temporary_register3651",
+          "passed": true
+        },
+        {
+          "name": "preserved setting trial_days",
+          "passed": true
+        },
+        {
+          "name": "preserved setting trial_months",
+          "passed": true
+        },
+        {
+          "name": "live SMS mode keeps temporary approval ineffective",
+          "passed": true
+        },
+        {
+          "name": "real recover restores previous release",
+          "passed": true
+        },
+        {
+          "name": "recover restores 56 migration history",
+          "passed": true
+        },
+        {
+          "name": "recover preserves source business records",
+          "passed": true
+        },
+        {
+          "name": "recover preserves custom prices",
+          "passed": true
+        },
+        {
+          "name": "recover leaves no maintenance marker",
+          "passed": true
+        }
+      ]
+    },
+    "design-results.json": {
+      "passed": 28,
+      "checks": [
+        {
+          "name": "email_verified retains plain text alternative",
+          "passed": true
+        },
+        {
+          "name": "welcome retains plain text alternative",
+          "passed": true
+        },
+        {
+          "name": "activated retains plain text alternative",
+          "passed": true
+        },
+        {
+          "name": "transfer retains plain text alternative",
+          "passed": true
+        },
+        {
+          "name": "credits retains plain text alternative",
+          "passed": true
+        },
+        {
+          "name": "low retains plain text alternative",
+          "passed": true
+        },
+        {
+          "name": "expiring retains plain text alternative",
+          "passed": true
+        },
+        {
+          "name": "expired retains plain text alternative",
+          "passed": true
+        },
+        {
+          "name": "verification exactly one image and logo first",
+          "passed": true
+        },
+        {
+          "name": "verification common brand palette and public logo",
+          "passed": true
+        },
+        {
+          "name": "email_verified exactly one image and logo first",
+          "passed": true
+        },
+        {
+          "name": "email_verified common brand palette and public logo",
+          "passed": true
+        },
+        {
+          "name": "welcome exactly one image and logo first",
+          "passed": true
+        },
+        {
+          "name": "welcome common brand palette and public logo",
+          "passed": true
+        },
+        {
+          "name": "activated exactly one image and logo first",
+          "passed": true
+        },
+        {
+          "name": "activated common brand palette and public logo",
+          "passed": true
+        },
+        {
+          "name": "transfer exactly one image and logo first",
+          "passed": true
+        },
+        {
+          "name": "transfer common brand palette and public logo",
+          "passed": true
+        },
+        {
+          "name": "credits exactly one image and logo first",
+          "passed": true
+        },
+        {
+          "name": "credits common brand palette and public logo",
+          "passed": true
+        },
+        {
+          "name": "low exactly one image and logo first",
+          "passed": true
+        },
+        {
+          "name": "low common brand palette and public logo",
+          "passed": true
+        },
+        {
+          "name": "expiring exactly one image and logo first",
+          "passed": true
+        },
+        {
+          "name": "expiring common brand palette and public logo",
+          "passed": true
+        },
+        {
+          "name": "expired exactly one image and logo first",
+          "passed": true
+        },
+        {
+          "name": "expired common brand palette and public logo",
+          "passed": true
+        },
+        {
+          "name": "subject and body escaped",
+          "passed": true
+        },
+        {
+          "name": "unexpected action host rejected",
+          "passed": true
+        }
+      ]
+    },
+    "safety-results.json": {
+      "passed": 12,
+      "checks": [
+        {
+          "name": "rollback never sends a registration email",
+          "passed": true
+        },
+        {
+          "name": "temporary registration creates three events",
+          "passed": true
+        },
+        {
+          "name": "flush refuses open transaction",
+          "passed": true
+        },
+        {
+          "name": "flush sends only its own user events",
+          "passed": true
+        },
+        {
+          "name": "other recipient remains queued",
+          "passed": true
+        },
+        {
+          "name": "reconciliation is idempotent",
+          "passed": true
+        },
+        {
+          "name": "email_verified preserves exact slogan and single logo",
+          "passed": true
+        },
+        {
+          "name": "phone_verified preserves exact slogan and single logo",
+          "passed": true
+        },
+        {
+          "name": "welcome preserves exact slogan and single logo",
+          "passed": true
+        },
+        {
+          "name": "live switch invalidates temporary welcome",
+          "passed": true
+        },
+        {
+          "name": "real phone produces separate accurate event",
+          "passed": true
+        },
+        {
+          "name": "welcome still remains unique",
+          "passed": true
+        }
+      ]
+    },
+    "smtp-results.json": {
+      "passed": 16,
+      "checks": [
+        {
+          "name": "accepted PHP exits cleanly",
+          "passed": true
+        },
+        {
+          "name": "accepted queue outcome correct",
+          "passed": true
+        },
+        {
+          "name": "accepted has single attempt",
+          "passed": true
+        },
+        {
+          "name": "accepted SMTP received complete data",
+          "passed": true
+        },
+        {
+          "name": "HTML and plain multipart transmitted",
+          "passed": true
+        },
+        {
+          "name": "UTF-8 subject round trip",
+          "passed": true
+        },
+        {
+          "name": "HTML actionable panel link",
+          "passed": true
+        },
+        {
+          "name": "rejected PHP exits cleanly",
+          "passed": true
+        },
+        {
+          "name": "rejected queue outcome correct",
+          "passed": true
+        },
+        {
+          "name": "rejected has single attempt",
+          "passed": true
+        },
+        {
+          "name": "rejected SMTP received complete data",
+          "passed": true
+        },
+        {
+          "name": "unknown PHP exits cleanly",
+          "passed": true
+        },
+        {
+          "name": "unknown queue outcome correct",
+          "passed": true
+        },
+        {
+          "name": "unknown has single attempt",
+          "passed": true
+        },
+        {
+          "name": "unknown SMTP received complete data",
+          "passed": true
+        },
+        {
+          "name": "unknown SMTP outcome is not automatically retried",
+          "passed": true
+        }
+      ]
+    },
+    "worker-results.json": {
+      "passed": 5,
+      "checks": [
+        {
+          "name": "reentrant dispatcher sends once",
+          "passed": true
+        },
+        {
+          "name": "crashed in-flight delivery becomes unknown without retry",
+          "passed": true
+        },
+        {
+          "name": "global switch prevents transport",
+          "passed": true
+        },
+        {
+          "name": "type switch prevents transport",
+          "passed": true
+        },
+        {
+          "name": "worker respects application exclusive lock",
+          "passed": true
+        }
+      ]
+    },
+    "reminders-results.json": {
+      "passed": 22,
+      "checks": [
+        {
+          "name": "low balance boundary 26",
+          "passed": true
+        },
+        {
+          "name": "low balance boundary 25",
+          "passed": true
+        },
+        {
+          "name": "low balance boundary 24",
+          "passed": true
+        },
+        {
+          "name": "low balance boundary 0",
+          "passed": true
+        },
+        {
+          "name": "daily off does not repeat episode next day",
+          "passed": true
+        },
+        {
+          "name": "balance recovery cancels queued low",
+          "passed": true
+        },
+        {
+          "name": "fresh fall below threshold creates new episode",
+          "passed": true
+        },
+        {
+          "name": "daily toggle same day no second episode email",
+          "passed": true
+        },
+        {
+          "name": "daily reminder next day exactly once",
+          "passed": true
+        },
+        {
+          "name": "future low event valid on its local day",
+          "passed": true
+        },
+        {
+          "name": "old low checked again immediately before send",
+          "passed": true
+        },
+        {
+          "name": "more than seven days no reminder",
+          "passed": true
+        },
+        {
+          "name": "seven days same day one reminder",
+          "passed": true
+        },
+        {
+          "name": "seven days mail correct days and exact expiry",
+          "passed": true
+        },
+        {
+          "name": "renewal cancels relevance of already queued reminder",
+          "passed": true
+        },
+        {
+          "name": "expired once per exact ending event",
+          "passed": true
+        },
+        {
+          "name": "expiry state valid after ending",
+          "passed": true
+        },
+        {
+          "name": "renewal invalidates expired notification",
+          "passed": true
+        },
+        {
+          "name": "bounded scan cursor advances across all three firms",
+          "passed": true
+        },
+        {
+          "name": "obsolete reminders never reach SMTP",
+          "passed": true
+        },
+        {
+          "name": "new queue recognized by backup purge matcher",
+          "passed": true
+        },
+        {
+          "name": "other firm preserved by backup purge matcher",
+          "passed": true
+        }
+      ]
+    },
+    "flow-results.json": {
+      "passed": 16,
+      "checks": [
+        {
+          "name": "email verification remains required",
+          "passed": true
+        },
+        {
+          "name": "email confirmation delivered without cron",
+          "passed": true
+        },
+        {
+          "name": "mobile step still required",
+          "passed": true
+        },
+        {
+          "name": "temporary confirmation opens panel",
+          "passed": true
+        },
+        {
+          "name": "three onboarding messages delivered without cron",
+          "passed": true
+        },
+        {
+          "name": "all three mail types accepted once",
+          "passed": true
+        },
+        {
+          "name": "temporary is not real phone verification",
+          "passed": true
+        },
+        {
+          "name": "Tebrikler, e-posta adresiniz doğrulandı! exact brand footer",
+          "passed": true
+        },
+        {
+          "name": "Tebrikler, e-posta adresiniz doğrulandı! only one logo image",
+          "passed": true
+        },
+        {
+          "name": "Mobil kayıt onayınız tamamlandı exact brand footer",
+          "passed": true
+        },
+        {
+          "name": "Mobil kayıt onayınız tamamlandı only one logo image",
+          "passed": true
+        },
+        {
+          "name": "Kobivira’ya hoş geldiniz exact brand footer",
+          "passed": true
+        },
+        {
+          "name": "Kobivira’ya hoş geldiniz only one logo image",
+          "passed": true
+        },
+        {
+          "name": "phone approval mail states temporary status",
+          "passed": true
+        },
+        {
+          "name": "welcome does not claim real verification",
+          "passed": true
+        },
+        {
+          "name": "revisits never duplicate onboarding mails",
+          "passed": true
+        }
+      ]
+    },
+    "events-results.json": {
+      "passed": 37,
+      "checks": [
+        {
+          "name": "email confirmation creates one durable event",
+          "passed": true
+        },
+        {
+          "name": "phone pending does not create welcome",
+          "passed": true
+        },
+        {
+          "name": "phone pending next step explicit",
+          "passed": true
+        },
+        {
+          "name": "exact congratulations subject",
+          "passed": true
+        },
+        {
+          "name": "used email link rejected",
+          "passed": true
+        },
+        {
+          "name": "repeat event is unique",
+          "passed": true
+        },
+        {
+          "name": "test phone flag not welcome",
+          "passed": true
+        },
+        {
+          "name": "real mobile consumer confirms with test transport",
+          "passed": true
+        },
+        {
+          "name": "all real verifications create welcome",
+          "passed": true
+        },
+        {
+          "name": "welcome emitted once",
+          "passed": true
+        },
+        {
+          "name": "welcome exact trial text",
+          "passed": true
+        },
+        {
+          "name": "welcome has real guide and comparison links",
+          "passed": true
+        },
+        {
+          "name": "kobi real callback activates order",
+          "passed": true
+        },
+        {
+          "name": "kobi activation event matches order",
+          "passed": true
+        },
+        {
+          "name": "kobi activation details correct",
+          "passed": true
+        },
+        {
+          "name": "kobi repeated callback no duplicate email",
+          "passed": true
+        },
+        {
+          "name": "kobi repeated callback no duplicate duration",
+          "passed": true
+        },
+        {
+          "name": "plus real callback activates order",
+          "passed": true
+        },
+        {
+          "name": "plus activation event matches order",
+          "passed": true
+        },
+        {
+          "name": "plus activation details correct",
+          "passed": true
+        },
+        {
+          "name": "plus repeated callback no duplicate email",
+          "passed": true
+        },
+        {
+          "name": "plus repeated callback no duplicate duration",
+          "passed": true
+        },
+        {
+          "name": "business real callback activates order",
+          "passed": true
+        },
+        {
+          "name": "business activation event matches order",
+          "passed": true
+        },
+        {
+          "name": "business activation details correct",
+          "passed": true
+        },
+        {
+          "name": "business repeated callback no duplicate email",
+          "passed": true
+        },
+        {
+          "name": "business repeated callback no duplicate duration",
+          "passed": true
+        },
+        {
+          "name": "actual ledger credit queues amount",
+          "passed": true
+        },
+        {
+          "name": "credit email shows recorded amount current balance reference",
+          "passed": true
+        },
+        {
+          "name": "same credit reference no second email",
+          "passed": true
+        },
+        {
+          "name": "rollback removes mail and credit together",
+          "passed": true
+        },
+        {
+          "name": "all automatic events remain unsent",
+          "passed": true
+        },
+        {
+          "name": "disabled SMTP defers queue without undoing payment",
+          "passed": true
+        },
+        {
+          "name": "changed recipient invalidates old event",
+          "passed": true
+        },
+        {
+          "name": "suspended company invalidates event",
+          "passed": true
+        },
+        {
+          "name": "HTML injection escaped",
+          "passed": true
+        },
+        {
+          "name": "MIME has both text and HTML",
+          "passed": true
+        }
+      ]
+    }
+  },
+  "static": {
+    "php_files": 202,
+    "protected_files_unchanged": 104,
+    "prior_migrations_unchanged": 56,
+    "prior_release_notes_unchanged": true,
+    "all_json_parsed": true,
+    "signature_verified": true,
+    "source_files": 373,
+    "package_bytes": 12687068,
+    "sha256": "95247cce8314f3d1ef76f97e2696d128253cb4dfd58d9c8a0126e0be11eac1b9"
+  }
+}
